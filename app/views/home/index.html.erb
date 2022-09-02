@@ -1,0 +1,10 @@
+<h1>Send mails</h1>
+
+<%= form_with url: send_simple_email_path, method: :post do |form| %>
+  <%= form.label 'Enter your name', for: :name %><br/>
+  <%= form.text_field :name, :required => true %><br/>
+  <%= form.submit "Send custom email" %>
+<% end %>
+
+<hr>
+<%= button_to 'Send email with attachments', send_email_with_attachments_path, method: :get %>
