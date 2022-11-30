@@ -67,15 +67,4 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    user_name: '2c5ed44f-464a-474f-9367-240aa8c969b1',
-    password: 'Ubw1j7IlMGNpbYKBzV1C',
-    address: 'localhost',
-    domain: 'localhost',
-    port: '2525',
-    authentication: :cram_md5,
-    openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE
-  }
 end
